@@ -1,3 +1,4 @@
+#here is a commented version.
 #i've been using PyCharm to work with this. 
 #i would just use a .txt file and Terminal realistically. 
 #This is not a very long program and should work if we figure out where the problem is. 
