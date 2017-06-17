@@ -1,11 +1,11 @@
-#here is a commented version.
-#i've been using PyCharm to work with this. 
+#here is a commented version (DONE ON MAC OS X).
+#i've been using PyCharm **ON A MAC** to work with this. 
 #i would just use a .txt file and Terminal realistically. 
 #This is not a very long program and should work if we figure out where the problem is. 
 
 import requests #requests library from pip install request(s?) 
 import urllib3 #urllib3 from brew install python3 (I think, if not, its pip install urllib3 or something. Google)
-from bs4 import BeautifulSoup #IF YOU DON't HAVE ANY OF THESE PACKAGES, GOOGLE HOMEBREW, DOWNLOAD IT, THEN in Terminal, 
+from bs4 import BeautifulSoup # FOR MAC: IF YOU DON't HAVE ANY OF THESE PACKAGES, GOOGLE HOMEBREW, DOWNLOAD IT, THEN in Terminal, 
                               # brew install python3 and then do brew install pip(3?) or brew install python3 
                               # OR DO THIS vvv (hopefully does everything for u. if this program does not compile after doing this message me.) 
                               # https://stackoverflow.com/questions/20082935/how-to-install-pip-for-python-3-on-mac-os-x
