@@ -21,7 +21,7 @@ def main():
     params = { #a guess at what probably needs to be passed into params to fix '/#pf=xbox' from not being read... maybe not necessary.
         'platform': 'xbox' # does not have to be here to work the same as the program already does. (CAN REMOVE LINES 20-22 and (probably) LINES 26-29!)
     }
-    page = requests.get("http://www.rl-trades.com/#pf=xbox", headers={'Platform': 'Xbox'}, verify=False, cookies=cookies, params=params).text # THIS IS THE PROBLEM.
+    page = requests.get("https://www.rl-trades.com/?ajax=trades&pf=xbox&tk=6mopqedt1f‌​&_=1497707376134", headers={'Platform': 'Xbox'}, verify=False, cookies=cookies, params=params).text # THIS IS THE PROBLEM.
     page # okay above ^ verify = False has to be there, otherwise it doesnt work. verify=False though might be causing the URL to be read as http://www.rl-trades.com rather than http://www.rl-trades.com/#pf=xbox
     soup = BeautifulSoup(page, 'html.parser') # the rest (i.e. headers={'Platform': 'Xbox'}, cookies=cookies, params=params).text does not have to be there to work the same way. 
     #print(soup.prettify()) #uncomment to see what HTML is being read in right here
